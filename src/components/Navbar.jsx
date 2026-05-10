@@ -4,6 +4,7 @@ const links = [
   { to: '/', label: 'Home' },
   { to: '/listings', label: 'Find Housing' },
   { to: '/roommates', label: 'Roommates' },
+  { to: '/guide', label: 'Housing Guide' },
   { to: '/chat', label: 'AI Assistant' },
 ]
 

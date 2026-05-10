@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import Listings from './pages/Listings'
 import RoommateMatch from './pages/RoommateMatch'
 import Chat from './pages/Chat'
+import HousingGuide from './pages/HousingGuide'
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/listings" element={<Listings />} />
           <Route path="/roommates" element={<RoommateMatch />} />
+          <Route path="/guide" element={<HousingGuide />} />
           <Route path="/chat" element={<Chat />} />
         </Routes>
       </div>

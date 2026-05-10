@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { ETHNICITIES, INDUSTRIES, CITY_LABELS, getRecommendations } from '../data/cityProfiles'
 
 const CITIES = [
   { value: 'Chicago',     label: 'Chicago, IL',     jobs: 'Logistics · Finance · Healthcare' },
@@ -13,34 +14,6 @@ const CITIES = [
   { value: 'Miami',       label: 'Miami, FL',       jobs: 'International trade · Healthcare' },
 ]
 
-const RECOMMENDED_CITIES = [
-  {
-    value: 'Houston',
-    label: 'Houston, TX',
-    reason: 'Fastest-growing US job market with no state income tax. Lower cost of living than other major cities and a large, established immigrant population.',
-  },
-  {
-    value: 'Dallas',
-    label: 'Dallas, TX',
-    reason: 'High demand for workers across all skill levels. Strong growth in tech, construction, and service industries.',
-  },
-  {
-    value: 'Atlanta',
-    label: 'Atlanta, GA',
-    reason: 'Major corporate hub and logistics center. More affordable housing than coastal cities with a diverse economy.',
-  },
-  {
-    value: 'Chicago',
-    label: 'Chicago, IL',
-    reason: 'Large, established immigrant communities. Diverse economy spanning manufacturing, finance, and healthcare.',
-  },
-  {
-    value: 'Minneapolis',
-    label: 'Minneapolis, MN',
-    reason: 'Among the highest employment rates in the US. Known for welcoming newcomer communities, especially from East Africa and Southeast Asia.',
-  },
-]
-
 const TIMELINE_OPTIONS = [
   { value: 'within_3mo', label: 'Within 3 months' },
   { value: '3_to_6mo',   label: '3 to 6 months' },
@@ -48,21 +21,23 @@ const TIMELINE_OPTIONS = [
 ]
 
 const ROOMMATE_OPTIONS = [
-  { value: 'solo',            label: 'Living alone' },
-  { value: 'open',            label: 'Open to roommates' },
-  { value: 'need_roommates',  label: 'Need roommates' },
+  { value: 'solo',           label: 'Living alone' },
+  { value: 'open',           label: 'Open to roommates' },
+  { value: 'need_roommates', label: 'Need roommates' },
 ]
 
 const FEATURES = [
-  { title: 'Filtered Listings',  desc: 'Apartments matched to your budget and transit needs' },
-  { title: 'Roommate Matching',  desc: 'Find compatible roommates from your community' },
-  { title: 'AI Housing Guide',   desc: 'Ask about leases, tenant rights, and neighborhoods' },
+  { title: 'Filtered Listings', desc: 'Apartments matched to your budget and transit needs' },
+  { title: 'Roommate Matching', desc: 'Find compatible roommates from your community' },
+  { title: 'AI Housing Guide',  desc: 'Ask about leases, tenant rights, and neighborhoods' },
 ]
 
 export default function Home() {
   const navigate = useNavigate()
   const [inUS, setInUS] = useState(true)
   const [moveTimeline, setMoveTimeline] = useState('within_3mo')
+  const [ethnicity, setEthnicity] = useState('')
+  const [industry, setIndustry] = useState('')
   const [city, setCity] = useState('')
   const [showRecs, setShowRecs] = useState(false)
   const [budget, setBudget] = useState(1200)
@@ -81,7 +56,9 @@ export default function Home() {
     setShowRecs(false)
   }
 
+  const recommendations = getRecommendations(ethnicity, industry)
   const selectedCityData = CITIES.find(c => c.value === city)
+  const isPersonalized = !!(ethnicity || industry)
 
   return (
     <div>
@@ -109,8 +86,8 @@ export default function Home() {
               </label>
               <div className="flex gap-2">
                 {[
-                  { val: true,  label: 'Yes, I\'m already here' },
-                  { val: false, label: 'No, I\'m planning to move' },
+                  { val: true,  label: "Yes, I'm already here" },
+                  { val: false, label: "No, I'm planning to move" },
                 ].map(({ val, label }) => (
                   <button
                     key={String(val)}
@@ -128,29 +105,74 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Move timeline — only shown when not yet in US */}
+            {/* Fields that only show when not yet in the US */}
             {!inUS && (
-              <div>
-                <label className="block text-sm font-medium text-slate-700 mb-2">
-                  When are you thinking of moving?
-                </label>
-                <div className="flex gap-2">
-                  {TIMELINE_OPTIONS.map(opt => (
-                    <button
-                      key={opt.value}
-                      type="button"
-                      onClick={() => setMoveTimeline(opt.value)}
-                      className={`flex-1 py-2 rounded-lg border-2 text-xs font-medium transition-colors ${
-                        moveTimeline === opt.value
-                          ? 'border-blue-600 bg-blue-50 text-blue-700'
-                          : 'border-slate-200 text-slate-600 hover:border-blue-300'
-                      }`}
-                    >
-                      {opt.label}
-                    </button>
-                  ))}
+              <>
+                {/* Move timeline */}
+                <div>
+                  <label className="block text-sm font-medium text-slate-700 mb-2">
+                    When are you thinking of moving?
+                  </label>
+                  <div className="flex gap-2">
+                    {TIMELINE_OPTIONS.map(opt => (
+                      <button
+                        key={opt.value}
+                        type="button"
+                        onClick={() => setMoveTimeline(opt.value)}
+                        className={`flex-1 py-2 rounded-lg border-2 text-xs font-medium transition-colors ${
+                          moveTimeline === opt.value
+                            ? 'border-blue-600 bg-blue-50 text-blue-700'
+                            : 'border-slate-200 text-slate-600 hover:border-blue-300'
+                        }`}
+                      >
+                        {opt.label}
+                      </button>
+                    ))}
+                  </div>
                 </div>
-              </div>
+
+                {/* Cultural background */}
+                <div>
+                  <label className="block text-sm font-medium text-slate-700 mb-1">
+                    What is your cultural background?
+                    <span className="ml-1 text-slate-400 font-normal">(optional)</span>
+                  </label>
+                  <p className="text-xs text-slate-400 mb-2">
+                    Helps us find cities where your community is established.
+                  </p>
+                  <select
+                    value={ethnicity}
+                    onChange={e => setEthnicity(e.target.value)}
+                    className="w-full border border-slate-200 rounded-lg px-3 py-2.5 text-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  >
+                    <option value="">Select background (optional)</option>
+                    {ETHNICITIES.map(e => (
+                      <option key={e.value} value={e.value}>{e.label}</option>
+                    ))}
+                  </select>
+                </div>
+
+                {/* Industry */}
+                <div>
+                  <label className="block text-sm font-medium text-slate-700 mb-1">
+                    What industry do you work in?
+                    <span className="ml-1 text-slate-400 font-normal">(optional)</span>
+                  </label>
+                  <p className="text-xs text-slate-400 mb-2">
+                    Helps us recommend cities where openings in your field are more available.
+                  </p>
+                  <select
+                    value={industry}
+                    onChange={e => setIndustry(e.target.value)}
+                    className="w-full border border-slate-200 rounded-lg px-3 py-2.5 text-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  >
+                    <option value="">Select industry (optional)</option>
+                    {INDUSTRIES.map(i => (
+                      <option key={i.value} value={i.value}>{i.label}</option>
+                    ))}
+                  </select>
+                </div>
+              </>
             )}
 
             {/* City picker */}
@@ -186,27 +208,65 @@ export default function Home() {
                 </button>
               </div>
 
-              {/* Job opportunity recommendations panel */}
+              {/* Recommendation panel */}
               {showRecs && (
                 <div className="mt-2 rounded-xl border border-amber-200 bg-amber-50 p-4 space-y-2">
-                  <p className="text-xs font-semibold text-amber-800 uppercase tracking-wide mb-3">
-                    Top cities for immigrant job seekers
-                  </p>
-                  {RECOMMENDED_CITIES.map(rec => (
+                  <div className="flex items-center justify-between mb-3">
+                    <p className="text-xs font-semibold text-amber-800 uppercase tracking-wide">
+                      {isPersonalized ? 'Recommended for you' : 'Top cities for immigrant job seekers'}
+                    </p>
+                    {isPersonalized && (
+                      <span className="text-xs bg-amber-200 text-amber-800 px-2 py-0.5 rounded-full">
+                        Based on your profile
+                      </span>
+                    )}
+                  </div>
+                  {recommendations.map(rec => (
                     <button
-                      key={rec.value}
+                      key={rec.city}
                       type="button"
-                      onClick={() => selectRecommended(rec.value)}
+                      onClick={() => selectRecommended(rec.city)}
                       className="w-full text-left p-3 rounded-lg bg-white border border-amber-200 hover:border-amber-400 hover:shadow-sm transition-all"
                     >
-                      <p className="font-semibold text-slate-800 text-sm">{rec.label}</p>
-                      <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">{rec.reason}</p>
+                      <div className="flex items-center justify-between gap-2 mb-1">
+                        <p className="font-semibold text-slate-800 text-sm">
+                          {CITY_LABELS[rec.city] || rec.city}
+                        </p>
+                        <div className="flex gap-1 flex-shrink-0">
+                          {rec.communityNote && (
+                            <span className="text-xs bg-blue-100 text-blue-700 px-1.5 py-0.5 rounded">
+                              Community
+                            </span>
+                          )}
+                          {rec.industryNote && (
+                            <span className="text-xs bg-green-100 text-green-700 px-1.5 py-0.5 rounded">
+                              Jobs
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                      {rec.communityNote && (
+                        <p className="text-xs text-slate-600 mt-1 leading-relaxed">
+                          <span className="font-medium text-blue-600">Community: </span>
+                          {rec.communityNote}
+                        </p>
+                      )}
+                      {rec.industryNote && (
+                        <p className="text-xs text-slate-600 mt-1 leading-relaxed">
+                          <span className="font-medium text-green-600">Jobs: </span>
+                          {rec.industryNote}
+                        </p>
+                      )}
                     </button>
                   ))}
+                  {isPersonalized && (
+                    <p className="text-xs text-amber-700 pt-1">
+                      Results prioritize cities matching your background and industry. Used only to personalize results — not stored.
+                    </p>
+                  )}
                 </div>
               )}
 
-              {/* Jobs summary for selected city */}
               {selectedCityData && !showRecs && (
                 <p className="text-xs text-slate-500 mt-1.5">
                   Top industries: {selectedCityData.jobs}
