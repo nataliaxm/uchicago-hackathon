@@ -63,15 +63,18 @@ export default function Home() {
   return (
     <div>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-700 via-blue-600 to-indigo-700 text-white py-20 px-4">
+      <section className="bg-[#009BDA] text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-blue-200 text-sm font-medium tracking-widest uppercase mb-3">
+          <p className="text-blue-100 text-sm font-bold tracking-widest uppercase mb-3">
             Housing for Newcomers
           </p>
-          <h1 className="text-4xl sm:text-5xl font-bold mb-4 leading-tight">
+          <h1 
+            className="text-5xl sm:text-7xl font-extrabold mb-4 leading-tight drop-shadow-lg"
+            style={{ fontFamily: "'Playfair Display', serif" }}
+            >
             Find Your Home<br />in America
           </h1>
-          <p className="text-blue-100 text-lg mb-10 max-w-xl mx-auto">
+          <p className="text-blue-50 text-lg mb-10 max-w-xl mx-auto opacity-90">
             Affordable housing matched to your budget, transportation, and community preferences.
           </p>
 
@@ -342,7 +345,7 @@ export default function Home() {
 
             <button
               type="submit"
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-xl transition-colors text-base"
+              className="w-full bg-[#009BDA] hover:bg-[#007ba8] text-white font-semibold py-3 rounded-xl transition-colors text-base"
             >
               Find Apartments
             </button>

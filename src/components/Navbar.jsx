@@ -19,8 +19,8 @@ export default function Navbar() {
           
           {/* 2. Brand Logo: Red box remains the star attraction */}
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 bg-[#ff0000] rounded-xl flex items-center justify-center shadow-lg shadow-blue-200 group-hover:rotate-12 transition-transform">
-              <span className="text-xl">🌉</span>
+            <div className="flex items-center justify-center group-hover:rotate-12 transition-transform">
+              <span className="text-4xl leading-none select-none">🌉</span>
             </div>
             <div className="flex flex-col">
               <span className="font-black text-xl text-slate-900 tracking-tighter leading-none">Budget Bridge</span>
