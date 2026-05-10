@@ -11,30 +11,46 @@ export default function Navbar() {
   const location = useLocation()
 
   return (
-    <nav className="bg-slate-50/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50">
+    /* 1. Navbar Container: White background with the Sky Blue bottom border */
+    <nav className="bg-white/90 backdrop-blur-md border-b-4 border-sky-400 sticky top-0 z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <Link to="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-emerald-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">SN</span>
+        <div className="flex items-center justify-between h-20">
+          
+          {/* 2. Brand Logo: Using Chicago Victory Red */}
+          <Link to="/" className="flex items-center gap-2 group">
+            <div className="w-10 h-10 bg-[#ff0000] rounded-xl flex items-center justify-center shadow-lg shadow-red-200 group-hover:rotate-12 transition-transform">
+              <span className="text-white font-black text-lg">SN</span>
             </div>
-            <span className="font-bold text-xl text-slate-800">Apartment Finder</span>
+            <div className="flex flex-col">
+              <span className="font-black text-xl text-slate-900 tracking-tighter leading-none">Budget Bridge</span>
+              <span className="text-[10px] font-bold text-sky-500 uppercase tracking-[0.2em]">Chicago Edition</span>
+            </div>
           </Link>
 
-          <div className="flex gap-1">
-            {links.map(link => (
-              <Link
-                key={link.to}
-                to={link.to}
-                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                  location.pathname === link.to
-                    ? 'bg-gray-100 text-blue-700'
-                    : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
+          {/* 3. Navigation Links */}
+          <div className="flex gap-2">
+            {links.map(link => {
+              const isActive = location.pathname === link.to
+              
+              return (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  className={`relative px-4 py-2 rounded-lg text-sm font-bold transition-all duration-200 ${
+                    isActive
+                      ? 'text-sky-600 bg-sky-50'
+                      : 'text-slate-500 hover:text-sky-500 hover:bg-slate-50'
+                  }`}
+                >
+                  {link.label}
+                  
+                  {/* 4. Active "Star" Indicator: A small red dot that appears under the active link */}
+                  {isActive && (
+                    <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-1.5 h-1.5 bg-[#ff0000] rounded-full shadow-[0_0_8px_rgba(255,0,0,0.6)]" />
+                  )}
+                </Link>
+              )
+            })}
           </div>
         </div>
       </div>
