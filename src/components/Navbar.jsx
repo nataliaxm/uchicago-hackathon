@@ -19,11 +19,11 @@ export default function Navbar() {
           {/* 2. Brand Logo: Using Chicago Victory Red */}
           <Link to="/" className="flex items-center gap-2 group">
             <div className="w-10 h-10 bg-[#ff0000] rounded-xl flex items-center justify-center shadow-lg shadow-red-200 group-hover:rotate-12 transition-transform">
-              <span className="text-white font-black text-lg">SN</span>
+              <div className="logo-circle">CHI</div>
             </div>
             <div className="flex flex-col">
               <span className="font-black text-xl text-slate-900 tracking-tighter leading-none">Budget Bridge</span>
-              <span className="text-[10px] font-bold text-sky-500 uppercase tracking-[0.2em]">Chicago Edition</span>
+              <span className="text-[8px] font-bold text-sky-500 uppercase tracking-[0.2em]">FInd your apartment</span>
             </div>
           </Link>
 
