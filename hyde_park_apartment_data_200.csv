@@ -1,0 +1,201 @@
+Post_ID,Address,Building_Type,Bedrooms,Bathrooms,Monthly_Rent_USD,Square_Footage,Distance_to_Campus_Miles,Amenities,Availability
+HP-1001,5050 E 55th St,Converted Loft,Studio,1.0,1081,539,0.93,"Fitness Center, Radiator Heat, Parking Included",Immediate
+HP-1002,5416 S Woodlawn Ave,Modern High-Rise,Studio,1.0,1717,409,0.73,"Radiator Heat, Hardwood Floors, Pet Friendly",July 1st
+HP-1003,5084 E 53rd St,Mid-Rise,2,1.0,2348,1116,0.63,"Rooftop Deck, Fitness Center, Radiator Heat",July 1st
+HP-1004,5547 S Cornell Ave,Mid-Rise,1,1.0,1394,667,0.87,"Hardwood Floors, Fitness Center",July 1st
+HP-1005,5477 E 55th St,Luxury Condo,Studio,1.0,1246,367,0.49,"Fitness Center, Pet Friendly, Parking Included, Radiator Heat",July 1st
+HP-1006,5073 S Kenwood Ave,Vintage Walk-up,1,1.0,1836,653,0.85,"Parking Included, Doorman",June 1st
+HP-1007,5504 S Blackstone Ave,Vintage Walk-up,1,1.0,1805,669,1.25,"Rooftop Deck, In-unit Laundry, Pet Friendly",July 1st
+HP-1008,5697 S Kenwood Ave,Student Housing,1,1.0,1930,654,0.74,"Pet Friendly, Central Air, Hardwood Floors, Rooftop Deck",July 1st
+HP-1009,5069 S Kenwood Ave,Vintage Walk-up,1,1.0,1701,743,0.81,"Parking Included, Hardwood Floors, Rooftop Deck, Fitness Center, Radiator Heat",Immediate
+HP-1010,5442 E 53rd St,Mid-Rise,Studio,1.0,956,378,1.49,"Parking Included, Fitness Center, Hardwood Floors, Pet Friendly, Balcony",July 1st
+HP-1011,5706 S Blackstone Ave,Luxury Condo,2,1.0,3098,958,0.32,"Rooftop Deck, Fitness Center, Balcony, Pet Friendly",Immediate
+HP-1012,4982 S Blackstone Ave,Converted Loft,2,2.0,2780,1156,0.95,"Balcony, Radiator Heat",June 1st
+HP-1013,4819 S University Ave,Renovated Greystone,2,1.0,2500,1065,1.33,"Balcony, Pet Friendly, In-unit Laundry, Fitness Center",Immediate
+HP-1014,4928 E 53rd St,Modern High-Rise,2,1.0,3184,1172,0.69,"Radiator Heat, Doorman, Balcony, Central Air, Hardwood Floors",June 1st
+HP-1015,5487 S Lake Shore Dr,Luxury Condo,2,1.0,2808,1059,0.45,"Central Air, Radiator Heat, Parking Included, In-unit Laundry",Immediate
+HP-1016,5402 E 55th St,Renovated Greystone,Studio,1.0,1035,491,0.42,"Fitness Center, In-unit Laundry",Immediate
+HP-1017,5085 S Lake Shore Dr,Mid-Rise,1,1.0,1593,731,0.91,"Pet Friendly, Radiator Heat, Doorman, Rooftop Deck, Balcony",June 1st
+HP-1018,4896 S University Ave,Mid-Rise,1,1.0,1544,704,0.18,"Rooftop Deck, Hardwood Floors, Radiator Heat, Pet Friendly, Parking Included",Immediate
+HP-1019,5054 E 55th St,Modern High-Rise,1,1.0,1861,686,0.69,"Radiator Heat, Central Air, Doorman",July 1st
+HP-1020,5253 S Ridgewood Ct,Student Housing,1,1.0,1427,836,1.27,"In-unit Laundry, Radiator Heat",Immediate
+HP-1021,5292 E 55th St,Mid-Rise,2,1.0,2497,1108,0.47,"In-unit Laundry, Doorman, Hardwood Floors, Parking Included, Pet Friendly",August 1st
+HP-1022,5602 S Blackstone Ave,Renovated Greystone,1,1.0,2098,845,0.91,"Doorman, Pet Friendly, Balcony, Fitness Center, In-unit Laundry",Immediate
+HP-1023,5288 S Blackstone Ave,Converted Loft,1,1.0,1948,612,1.29,"In-unit Laundry, Radiator Heat, Fitness Center",Immediate
+HP-1024,4922 E 57th St,Luxury Condo,Studio,1.0,1613,410,0.69,"Parking Included, In-unit Laundry, Fitness Center",July 1st
+HP-1025,5044 S Kimbark Ave,Renovated Greystone,1,1.0,1671,783,0.11,"Doorman, Balcony, Central Air, Parking Included, In-unit Laundry",Immediate
+HP-1026,4935 E 57th St,Modern High-Rise,1,1.0,2021,729,0.32,"Fitness Center, Pet Friendly, Rooftop Deck, Doorman",July 1st
+HP-1027,5483 E 56th St,Luxury Condo,3,3.0,3308,1570,1.35,"Fitness Center, Doorman, Balcony, In-unit Laundry",June 1st
+HP-1028,5151 E 55th St,Renovated Greystone,1,1.0,2084,653,0.17,"Radiator Heat, Central Air, Balcony, Hardwood Floors",August 1st
+HP-1029,5589 E 53rd St,Mid-Rise,1,1.0,1691,600,0.11,"Doorman, Central Air, Hardwood Floors, Balcony",Immediate
+HP-1030,5396 S Blackstone Ave,Converted Loft,3,3.0,3278,1318,0.53,"Hardwood Floors, Doorman, In-unit Laundry",Immediate
+HP-1031,4905 S Dorchester Ave,Renovated Greystone,1,1.0,2032,663,1.47,"Parking Included, Doorman, Pet Friendly, Hardwood Floors, Fitness Center",June 1st
+HP-1032,5601 E 57th St,Student Housing,Studio,1.0,1140,538,0.25,"Pet Friendly, Balcony, Doorman, Hardwood Floors, Rooftop Deck",Immediate
+HP-1033,5158 S Kimbark Ave,Mid-Rise,1,1.0,1821,651,0.66,"Pet Friendly, In-unit Laundry, Parking Included",July 1st
+HP-1034,5159 S Lake Shore Dr,Mid-Rise,Studio,1.0,1085,547,0.35,"Radiator Heat, Rooftop Deck, In-unit Laundry, Central Air, Doorman",July 1st
+HP-1035,5546 S Ridgewood Ct,Modern High-Rise,Studio,1.0,1553,461,1.36,"Hardwood Floors, Radiator Heat, Fitness Center, Pet Friendly",June 1st
+HP-1036,5332 E 57th St,Renovated Greystone,Studio,1.0,801,461,1.43,"Rooftop Deck, Hardwood Floors, Fitness Center",July 1st
+HP-1037,5537 E 57th St,Luxury Condo,1,1.0,1877,817,0.66,"Radiator Heat, Balcony, Hardwood Floors, Doorman",July 1st
+HP-1038,5762 E 54th St,Luxury Condo,Studio,1.0,1880,457,0.87,"Parking Included, Balcony, Hardwood Floors",Immediate
+HP-1039,5421 S Lake Shore Dr,Renovated Greystone,1,1.0,1943,710,0.4,"Central Air, Parking Included, Radiator Heat, Rooftop Deck",August 1st
+HP-1040,4886 S Kimbark Ave,Mid-Rise,3,3.0,3574,1386,1.23,"Fitness Center, Pet Friendly, Balcony, Parking Included",June 1st
+HP-1041,5670 S Ridgewood Ct,Modern High-Rise,Studio,1.0,1825,471,1.34,"Central Air, Hardwood Floors",June 1st
+HP-1042,4951 S Lake Shore Dr,Converted Loft,2,2.0,2249,1104,0.41,"Fitness Center, Hardwood Floors",August 1st
+HP-1043,5267 E 53rd St,Modern High-Rise,1,1.0,1874,834,0.96,"Radiator Heat, Parking Included, Rooftop Deck, Hardwood Floors, Pet Friendly",August 1st
+HP-1044,5561 E 56th St,Mid-Rise,3,2.5,3062,1759,0.49,"Central Air, Balcony, Pet Friendly, Hardwood Floors, Rooftop Deck",August 1st
+HP-1045,5530 S Kimbark Ave,Converted Loft,1,1.0,1429,712,1.35,"Balcony, Rooftop Deck, Radiator Heat",Immediate
+HP-1046,4956 S Kenwood Ave,Vintage Walk-up,Studio,1.0,1310,448,0.56,"Fitness Center, Hardwood Floors, Radiator Heat",August 1st
+HP-1047,5726 S Ridgewood Ct,Student Housing,Studio,1.0,1198,457,0.77,"Parking Included, Hardwood Floors",July 1st
+HP-1048,5552 S Blackstone Ave,Renovated Greystone,2,2.0,2765,1175,0.71,"Central Air, Pet Friendly, Balcony",Immediate
+HP-1049,5541 E 53rd St,Student Housing,1,1.0,1764,773,0.89,"Doorman, Radiator Heat, In-unit Laundry, Pet Friendly, Balcony",Immediate
+HP-1050,4851 S Kimbark Ave,Modern High-Rise,2,1.0,2586,1136,1.17,"Rooftop Deck, Pet Friendly, Central Air, Doorman, Hardwood Floors",August 1st
+HP-1051,5281 S Woodlawn Ave,Renovated Greystone,2,2.0,2083,1029,1.01,"Rooftop Deck, Pet Friendly",Immediate
+HP-1052,5659 S Woodlawn Ave,Mid-Rise,Studio,1.0,1004,413,1.04,"Pet Friendly, Doorman, Central Air",June 1st
+HP-1053,5421 S Kenwood Ave,Student Housing,2,2.0,2620,985,0.25,"Doorman, Balcony",Immediate
+HP-1054,5206 S Kenwood Ave,Renovated Greystone,1,1.0,1734,832,1.08,"Fitness Center, Pet Friendly, Parking Included",July 1st
+HP-1055,5155 S Blackstone Ave,Mid-Rise,2,1.0,2042,1189,1.25,"Rooftop Deck, Fitness Center, Parking Included, In-unit Laundry, Pet Friendly",Immediate
+HP-1056,5524 E 53rd St,Student Housing,3,3.0,3370,1756,1.18,"Doorman, Radiator Heat, Balcony, Central Air, Hardwood Floors",August 1st
+HP-1057,5650 E 57th St,Student Housing,2,2.0,2251,1065,0.44,"Balcony, Central Air",August 1st
+HP-1058,5306 E 56th St,Luxury Condo,2,2.0,2429,1072,1.22,"Doorman, Central Air, Pet Friendly, Parking Included",July 1st
+HP-1059,5329 E 55th St,Renovated Greystone,2,2.0,2010,1184,0.78,"Pet Friendly, Hardwood Floors",June 1st
+HP-1060,5258 S Ridgewood Ct,Converted Loft,1,1.0,1852,782,0.41,"Fitness Center, Balcony",June 1st
+HP-1061,5343 S Dorchester Ave,Renovated Greystone,2,2.0,2566,1142,0.48,"Radiator Heat, Rooftop Deck, Parking Included, Central Air, Pet Friendly",July 1st
+HP-1062,4922 S Kenwood Ave,Vintage Walk-up,Studio,1.0,923,399,0.49,"Pet Friendly, Parking Included, Central Air",July 1st
+HP-1063,4983 S Kimbark Ave,Modern High-Rise,2,2.0,2769,1016,0.48,"Radiator Heat, Doorman",Immediate
+HP-1064,5453 E 56th St,Luxury Condo,1,1.0,1879,841,0.72,"Fitness Center, In-unit Laundry, Balcony, Pet Friendly, Hardwood Floors",June 1st
+HP-1065,4916 E 56th St,Modern High-Rise,1,1.0,2239,820,0.2,"Hardwood Floors, Central Air",Immediate
+HP-1066,4887 E 55th St,Vintage Walk-up,Studio,1.0,911,494,0.95,"Radiator Heat, Hardwood Floors",June 1st
+HP-1067,5104 E 56th St,Mid-Rise,1,1.0,1803,715,0.98,"Balcony, In-unit Laundry, Fitness Center, Hardwood Floors, Central Air",July 1st
+HP-1068,5365 S University Ave,Converted Loft,Studio,1.0,977,411,1.07,"In-unit Laundry, Hardwood Floors, Central Air",August 1st
+HP-1069,5089 S Kenwood Ave,Renovated Greystone,Studio,1.0,1523,423,0.93,"Fitness Center, Pet Friendly, Balcony, Hardwood Floors, Rooftop Deck",June 1st
+HP-1070,4952 E 57th St,Student Housing,Studio,1.0,1463,407,1.21,"Doorman, Fitness Center, In-unit Laundry, Radiator Heat",July 1st
+HP-1071,5516 E 54th St,Student Housing,Studio,1.0,1111,526,0.21,"Radiator Heat, Parking Included, Central Air, Pet Friendly",Immediate
+HP-1072,5034 S Lake Shore Dr,Student Housing,2,2.0,2093,913,1.17,"Balcony, In-unit Laundry",June 1st
+HP-1073,4985 E 52nd St,Student Housing,1,1.0,1634,713,0.57,"Central Air, Fitness Center, Parking Included, Doorman, Pet Friendly",Immediate
+HP-1074,5307 S Kimbark Ave,Mid-Rise,Studio,1.0,1510,455,0.45,"Radiator Heat, In-unit Laundry, Central Air, Parking Included, Doorman",Immediate
+HP-1075,5473 E 56th St,Mid-Rise,1,1.0,1351,731,0.97,"Hardwood Floors, In-unit Laundry, Pet Friendly, Balcony, Doorman",August 1st
+HP-1076,5073 S Blackstone Ave,Converted Loft,1,1.0,1558,613,0.27,"Balcony, Central Air, Radiator Heat",June 1st
+HP-1077,5365 E 54th St,Converted Loft,Studio,1.0,814,491,0.75,"Pet Friendly, Fitness Center",Immediate
+HP-1078,5522 S Kimbark Ave,Converted Loft,2,2.0,2521,1049,0.3,"Central Air, Parking Included, Pet Friendly, Radiator Heat, Balcony",June 1st
+HP-1079,5684 S University Ave,Luxury Condo,1,1.0,1889,825,0.1,"Hardwood Floors, Rooftop Deck, Balcony, Parking Included",July 1st
+HP-1080,5686 E 53rd St,Mid-Rise,1,1.0,1851,768,1.17,"Radiator Heat, Central Air, Rooftop Deck, Doorman, Balcony",August 1st
+HP-1081,5385 E 54th St,Student Housing,3,2.0,3144,1657,1.14,"Hardwood Floors, In-unit Laundry, Rooftop Deck",August 1st
+HP-1082,5787 S Woodlawn Ave,Student Housing,3,3.0,3407,1377,1.32,"Radiator Heat, Rooftop Deck, Fitness Center",August 1st
+HP-1083,5539 E 53rd St,Modern High-Rise,1,1.0,1765,716,0.57,"Doorman, Fitness Center, Central Air, Hardwood Floors, Parking Included",August 1st
+HP-1084,5679 S Blackstone Ave,Converted Loft,Studio,1.0,1490,434,0.43,"Rooftop Deck, Central Air, In-unit Laundry, Balcony, Radiator Heat",July 1st
+HP-1085,5448 S Kenwood Ave,Vintage Walk-up,2,2.0,2578,950,1.07,"Central Air, Doorman",Immediate
+HP-1086,5167 S Dorchester Ave,Modern High-Rise,1,1.0,2050,614,1.21,"Doorman, Pet Friendly, Hardwood Floors, Balcony, Rooftop Deck",June 1st
+HP-1087,5499 E 55th St,Vintage Walk-up,Studio,1.0,1234,447,0.46,"Parking Included, Doorman, Pet Friendly, Central Air, Rooftop Deck",July 1st
+HP-1088,5493 S Blackstone Ave,Converted Loft,Studio,1.0,1094,469,1.48,"Fitness Center, Central Air, Rooftop Deck",July 1st
+HP-1089,5665 S Kimbark Ave,Converted Loft,3,3.0,3367,1428,0.43,"Hardwood Floors, Central Air, Fitness Center",July 1st
+HP-1090,4822 E 56th St,Luxury Condo,1,1.0,2052,779,0.8,"Balcony, In-unit Laundry, Radiator Heat, Parking Included, Rooftop Deck",July 1st
+HP-1091,4994 E 52nd St,Mid-Rise,2,2.0,2651,1012,1.2,"Doorman, Fitness Center, In-unit Laundry, Parking Included",Immediate
+HP-1092,5731 S Kimbark Ave,Luxury Condo,1,1.0,1842,633,1.2,"Hardwood Floors, Doorman, Pet Friendly, Fitness Center",July 1st
+HP-1093,5063 E 57th St,Luxury Condo,1,1.0,1918,669,0.3,"Balcony, Rooftop Deck, Fitness Center, Pet Friendly, In-unit Laundry",June 1st
+HP-1094,4892 S Ridgewood Ct,Mid-Rise,2,2.0,2374,1185,1.04,"In-unit Laundry, Balcony, Fitness Center, Pet Friendly, Doorman",July 1st
+HP-1095,4910 S Lake Shore Dr,Luxury Condo,1,1.0,2130,763,1.38,"Central Air, In-unit Laundry, Rooftop Deck",June 1st
+HP-1096,5109 S Lake Shore Dr,Converted Loft,Studio,1.0,1517,468,1.49,"Fitness Center, Doorman, In-unit Laundry, Central Air, Radiator Heat",Immediate
+HP-1097,5197 S Cornell Ave,Modern High-Rise,1,1.0,1888,737,1.02,"Radiator Heat, Hardwood Floors, Doorman, Pet Friendly",August 1st
+HP-1098,4833 S Kenwood Ave,Luxury Condo,1,1.0,2036,843,1.3,"Pet Friendly, Central Air, Radiator Heat, Fitness Center",Immediate
+HP-1099,5167 S Woodlawn Ave,Converted Loft,1,1.0,2010,830,0.23,"Balcony, Pet Friendly, Fitness Center, Hardwood Floors, Radiator Heat",June 1st
+HP-1100,5049 E 53rd St,Converted Loft,2,1.0,2341,925,0.92,"Fitness Center, Radiator Heat, Pet Friendly",June 1st
+HP-1101,4933 S Blackstone Ave,Renovated Greystone,2,1.0,2148,1041,0.12,"Doorman, Fitness Center, In-unit Laundry, Radiator Heat",June 1st
+HP-1102,4853 E 53rd St,Luxury Condo,1,1.0,2021,644,1.19,"Radiator Heat, Fitness Center, Parking Included, Pet Friendly, Hardwood Floors",Immediate
+HP-1103,4844 S Kenwood Ave,Student Housing,1,1.0,1979,842,1.29,"Central Air, In-unit Laundry, Radiator Heat, Pet Friendly",August 1st
+HP-1104,4875 E 57th St,Converted Loft,Studio,1.0,1254,532,0.19,"Rooftop Deck, Doorman",July 1st
+HP-1105,5343 S Kimbark Ave,Luxury Condo,2,2.0,3011,1095,0.26,"Radiator Heat, Hardwood Floors, Fitness Center, Parking Included, Rooftop Deck",June 1st
+HP-1106,5147 E 56th St,Student Housing,1,1.0,1773,658,0.54,"Hardwood Floors, Parking Included, Fitness Center, Doorman, Pet Friendly",July 1st
+HP-1107,4868 S University Ave,Renovated Greystone,3,3.0,3385,1772,0.24,"Fitness Center, Hardwood Floors",July 1st
+HP-1108,5779 S Blackstone Ave,Mid-Rise,Studio,1.0,1400,365,1.03,"Fitness Center, Hardwood Floors, Rooftop Deck, Radiator Heat",August 1st
+HP-1109,5414 S Kimbark Ave,Mid-Rise,3,2.0,3194,1795,1.02,"Fitness Center, Radiator Heat, Pet Friendly, Parking Included",June 1st
+HP-1110,4917 S Ridgewood Ct,Mid-Rise,Studio,1.0,1176,492,0.89,"Parking Included, Pet Friendly, Hardwood Floors, Central Air",Immediate
+HP-1111,4984 S Kimbark Ave,Luxury Condo,3,3.0,3329,1436,1.32,"Rooftop Deck, Parking Included, In-unit Laundry, Fitness Center",August 1st
+HP-1112,4893 S Kenwood Ave,Modern High-Rise,Studio,1.0,1231,512,0.58,"Hardwood Floors, Parking Included, Central Air",July 1st
+HP-1113,4961 S Ridgewood Ct,Renovated Greystone,2,1.0,2159,926,0.72,"Fitness Center, Balcony",August 1st
+HP-1114,5573 S Blackstone Ave,Student Housing,2,2.0,2220,1039,0.26,"Rooftop Deck, Hardwood Floors",August 1st
+HP-1115,5413 S Woodlawn Ave,Luxury Condo,2,1.0,2804,1012,1.42,"Pet Friendly, Balcony",June 1st
+HP-1116,4807 S Cornell Ave,Mid-Rise,1,1.0,1472,683,0.42,"Doorman, Parking Included, Hardwood Floors, Balcony, Rooftop Deck",July 1st
+HP-1117,5246 S Woodlawn Ave,Modern High-Rise,1,1.0,1793,789,1.09,"Fitness Center, Rooftop Deck, Hardwood Floors, Balcony, Pet Friendly",August 1st
+HP-1118,4975 S Ridgewood Ct,Renovated Greystone,Studio,1.0,1132,355,0.44,"Rooftop Deck, Fitness Center, Hardwood Floors, Central Air, In-unit Laundry",August 1st
+HP-1119,5147 E 55th St,Luxury Condo,Studio,1.0,1963,429,0.81,"Doorman, Fitness Center, Radiator Heat, Balcony",July 1st
+HP-1120,4949 S Kimbark Ave,Renovated Greystone,2,1.0,2105,1020,0.35,"Doorman, Parking Included, Fitness Center",August 1st
+HP-1121,5450 E 52nd St,Student Housing,2,2.0,2658,1189,0.76,"Rooftop Deck, Doorman, Central Air, In-unit Laundry",July 1st
+HP-1122,5319 S University Ave,Mid-Rise,1,1.0,1710,614,0.62,"Central Air, Parking Included, In-unit Laundry, Radiator Heat",July 1st
+HP-1123,5273 E 52nd St,Modern High-Rise,2,1.0,2793,1159,0.55,"Central Air, Pet Friendly",August 1st
+HP-1124,4905 S Ridgewood Ct,Luxury Condo,Studio,1.0,1661,365,0.45,"Fitness Center, Radiator Heat, Doorman, In-unit Laundry",August 1st
+HP-1125,5172 S Dorchester Ave,Student Housing,1,1.0,1512,756,0.94,"Hardwood Floors, Parking Included, Rooftop Deck, Central Air",July 1st
+HP-1126,5195 S Kimbark Ave,Modern High-Rise,1,1.0,2444,742,0.92,"Parking Included, Doorman, Rooftop Deck, In-unit Laundry",June 1st
+HP-1127,5478 E 54th St,Renovated Greystone,1,1.0,2065,767,0.88,"Parking Included, Fitness Center, Balcony",July 1st
+HP-1128,5501 E 57th St,Mid-Rise,Studio,1.0,1556,529,0.61,"Hardwood Floors, Radiator Heat",July 1st
+HP-1129,5770 S Ridgewood Ct,Renovated Greystone,Studio,1.0,1149,404,0.51,"Pet Friendly, Parking Included, Doorman, Fitness Center, In-unit Laundry",Immediate
+HP-1130,5432 E 53rd St,Luxury Condo,2,1.0,3184,1072,1.18,"Doorman, Parking Included, Radiator Heat, Hardwood Floors, Rooftop Deck",June 1st
+HP-1131,5492 S Kenwood Ave,Converted Loft,1,1.0,1723,705,0.43,"Central Air, Balcony, Parking Included",June 1st
+HP-1132,5176 S Lake Shore Dr,Renovated Greystone,3,2.5,3098,1762,0.69,"Central Air, Balcony, Hardwood Floors, Radiator Heat, Parking Included",June 1st
+HP-1133,5693 S Kimbark Ave,Mid-Rise,Studio,1.0,941,504,0.88,"Central Air, Rooftop Deck",Immediate
+HP-1134,5581 E 53rd St,Converted Loft,2,1.0,2085,1045,0.71,"Central Air, Radiator Heat, Doorman, Hardwood Floors",June 1st
+HP-1135,5224 S Woodlawn Ave,Mid-Rise,1,1.0,1377,689,0.62,"Radiator Heat, Rooftop Deck, Pet Friendly, Central Air, In-unit Laundry",Immediate
+HP-1136,5610 E 53rd St,Renovated Greystone,3,3.0,3243,1632,1.07,"In-unit Laundry, Balcony, Central Air",June 1st
+HP-1137,4819 S Kimbark Ave,Mid-Rise,2,2.0,2081,902,0.26,"Doorman, Radiator Heat, Hardwood Floors",July 1st
+HP-1138,5229 S Lake Shore Dr,Vintage Walk-up,1,1.0,1394,612,0.12,"Fitness Center, Parking Included, Central Air, Balcony, Hardwood Floors",June 1st
+HP-1139,5429 S Dorchester Ave,Converted Loft,Studio,1.0,801,459,1.03,"Parking Included, Hardwood Floors, Doorman",Immediate
+HP-1140,5357 S Blackstone Ave,Luxury Condo,3,2.0,3838,1788,0.16,"Hardwood Floors, Central Air",August 1st
+HP-1141,5607 S University Ave,Renovated Greystone,1,1.0,1715,604,0.16,"Pet Friendly, Fitness Center, Rooftop Deck, Radiator Heat",July 1st
+HP-1142,4986 S Ridgewood Ct,Mid-Rise,2,2.0,2646,1145,0.51,"Fitness Center, Central Air, In-unit Laundry",Immediate
+HP-1143,5755 S Kimbark Ave,Mid-Rise,Studio,1.0,1123,360,0.37,"Radiator Heat, Central Air, Balcony, In-unit Laundry, Rooftop Deck",July 1st
+HP-1144,5618 S Dorchester Ave,Mid-Rise,2,2.0,2127,1039,0.79,"Hardwood Floors, Central Air, Parking Included, Doorman, Fitness Center",August 1st
+HP-1145,5544 E 54th St,Renovated Greystone,3,3.0,2984,1436,0.86,"Hardwood Floors, Doorman",July 1st
+HP-1146,5113 S Cornell Ave,Modern High-Rise,Studio,1.0,1502,519,1.12,"Doorman, Central Air, Rooftop Deck, Pet Friendly, In-unit Laundry",July 1st
+HP-1147,4876 S Lake Shore Dr,Luxury Condo,3,2.5,3358,1627,1.29,"Rooftop Deck, Radiator Heat, Doorman, In-unit Laundry, Fitness Center",August 1st
+HP-1148,5460 S Dorchester Ave,Modern High-Rise,Studio,1.0,1997,410,0.73,"Hardwood Floors, In-unit Laundry, Doorman, Rooftop Deck",July 1st
+HP-1149,4940 S Blackstone Ave,Renovated Greystone,1,1.0,1937,619,1.44,"Hardwood Floors, Rooftop Deck, Balcony, Fitness Center",Immediate
+HP-1150,5735 S Blackstone Ave,Converted Loft,Studio,1.0,1196,482,1.09,"Balcony, Parking Included",June 1st
+HP-1151,5004 S University Ave,Luxury Condo,1,1.0,2252,834,1.36,"Fitness Center, Central Air, Doorman",August 1st
+HP-1152,4866 S Blackstone Ave,Modern High-Rise,2,2.0,3126,1077,0.61,"Balcony, Doorman, Radiator Heat, Hardwood Floors",June 1st
+HP-1153,4826 S Dorchester Ave,Modern High-Rise,3,2.0,3805,1421,1.34,"Central Air, Radiator Heat, Doorman, Balcony",Immediate
+HP-1154,5290 S Blackstone Ave,Renovated Greystone,1,1.0,2086,783,0.2,"Hardwood Floors, Fitness Center, Doorman, Central Air, Rooftop Deck",August 1st
+HP-1155,5364 S Lake Shore Dr,Converted Loft,1,1.0,2148,632,1.26,"Doorman, Hardwood Floors, In-unit Laundry",June 1st
+HP-1156,5030 S Dorchester Ave,Renovated Greystone,Studio,1.0,1526,432,1.44,"Fitness Center, Balcony, Pet Friendly, Rooftop Deck",July 1st
+HP-1157,4972 E 52nd St,Vintage Walk-up,2,1.0,2456,1157,1.26,"Doorman, Rooftop Deck, In-unit Laundry",Immediate
+HP-1158,5390 S Kimbark Ave,Modern High-Rise,Studio,1.0,1989,514,0.8,"Parking Included, Hardwood Floors, In-unit Laundry",July 1st
+HP-1159,5215 S Kimbark Ave,Converted Loft,3,2.5,3601,1425,0.78,"Fitness Center, In-unit Laundry, Doorman, Pet Friendly, Hardwood Floors",June 1st
+HP-1160,5681 S Dorchester Ave,Renovated Greystone,2,2.0,2751,1063,0.75,"Doorman, Rooftop Deck, Fitness Center, Parking Included, Central Air",July 1st
+HP-1161,5097 E 54th St,Student Housing,1,1.0,1401,624,0.54,"Pet Friendly, Doorman, Rooftop Deck, Balcony, Central Air",June 1st
+HP-1162,5309 S Woodlawn Ave,Student Housing,3,2.5,3215,1555,0.74,"Hardwood Floors, Radiator Heat",June 1st
+HP-1163,5088 S Cornell Ave,Vintage Walk-up,1,1.0,1201,612,0.7,"Balcony, Radiator Heat, In-unit Laundry, Hardwood Floors, Central Air",July 1st
+HP-1164,4846 E 54th St,Converted Loft,1,1.0,1724,703,0.37,"Parking Included, Radiator Heat",July 1st
+HP-1165,5363 S Kimbark Ave,Modern High-Rise,1,1.0,2532,715,0.65,"Doorman, Fitness Center",July 1st
+HP-1166,5321 E 54th St,Luxury Condo,3,2.0,3916,1401,0.29,"In-unit Laundry, Parking Included",July 1st
+HP-1167,5420 E 57th St,Mid-Rise,1,1.0,1502,716,0.65,"Rooftop Deck, Parking Included, Doorman",July 1st
+HP-1168,5345 S Cornell Ave,Luxury Condo,1,1.0,2271,812,1.04,"Central Air, In-unit Laundry, Rooftop Deck, Doorman",August 1st
+HP-1169,5693 S Kenwood Ave,Luxury Condo,1,1.0,2492,830,0.47,"Parking Included, Central Air",June 1st
+HP-1170,5336 S Lake Shore Dr,Converted Loft,Studio,1.0,974,472,0.25,"Doorman, Pet Friendly, In-unit Laundry, Balcony, Rooftop Deck",Immediate
+HP-1171,5507 E 55th St,Student Housing,1,1.0,1772,638,0.83,"Radiator Heat, Central Air, In-unit Laundry, Rooftop Deck, Fitness Center",July 1st
+HP-1172,5779 E 53rd St,Converted Loft,1,1.0,1671,696,1.05,"Radiator Heat, Rooftop Deck, Parking Included, Central Air, Hardwood Floors",July 1st
+HP-1173,5085 S Blackstone Ave,Luxury Condo,1,1.0,2002,845,0.39,"Pet Friendly, Balcony, Radiator Heat, Rooftop Deck",August 1st
+HP-1174,5080 S Kimbark Ave,Renovated Greystone,1,1.0,2088,743,0.63,"Parking Included, Radiator Heat",August 1st
+HP-1175,5097 S Woodlawn Ave,Mid-Rise,1,1.0,1499,797,0.46,"Fitness Center, Rooftop Deck, Central Air, Radiator Heat",August 1st
+HP-1176,5755 S Blackstone Ave,Vintage Walk-up,1,1.0,1427,737,0.17,"Doorman, Fitness Center, Pet Friendly, Radiator Heat",June 1st
+HP-1177,5138 S Kenwood Ave,Converted Loft,1,1.0,1773,625,0.67,"Fitness Center, Doorman, In-unit Laundry, Balcony, Parking Included",August 1st
+HP-1178,5461 S Woodlawn Ave,Student Housing,2,2.0,2292,1064,0.85,"Parking Included, Pet Friendly",Immediate
+HP-1179,5756 E 57th St,Vintage Walk-up,1,1.0,1330,814,0.36,"Hardwood Floors, Central Air",July 1st
+HP-1180,4909 E 57th St,Modern High-Rise,Studio,1.0,1817,495,1.29,"Balcony, Central Air, Radiator Heat, Fitness Center",August 1st
+HP-1181,4966 S Kenwood Ave,Renovated Greystone,Studio,1.0,1138,378,1.21,"Balcony, Doorman, In-unit Laundry, Rooftop Deck, Radiator Heat",June 1st
+HP-1182,5135 S University Ave,Vintage Walk-up,2,2.0,2327,1118,1.41,"Fitness Center, Doorman, Radiator Heat, Pet Friendly, Central Air",Immediate
+HP-1183,5073 S Dorchester Ave,Renovated Greystone,1,1.0,2121,714,0.6,"Parking Included, In-unit Laundry, Balcony, Rooftop Deck",June 1st
+HP-1184,5215 S Lake Shore Dr,Modern High-Rise,2,2.0,2563,1057,0.41,"Fitness Center, Balcony, Rooftop Deck, Radiator Heat",June 1st
+HP-1185,5182 E 54th St,Student Housing,Studio,1.0,1420,541,1.32,"Radiator Heat, Pet Friendly, Parking Included, Rooftop Deck, Balcony",Immediate
+HP-1186,4879 E 57th St,Luxury Condo,1,1.0,2120,780,1.36,"In-unit Laundry, Radiator Heat",June 1st
+HP-1187,5674 S Blackstone Ave,Luxury Condo,1,1.0,2085,642,0.72,"Fitness Center, Pet Friendly, Central Air, In-unit Laundry, Balcony",Immediate
+HP-1188,5377 S Woodlawn Ave,Student Housing,Studio,1.0,1267,456,1.14,"Balcony, In-unit Laundry, Hardwood Floors, Doorman, Radiator Heat",Immediate
+HP-1189,5354 S Woodlawn Ave,Modern High-Rise,1,1.0,1815,779,0.5,"Central Air, In-unit Laundry",June 1st
+HP-1190,5461 E 54th St,Mid-Rise,Studio,1.0,1546,514,0.21,"Hardwood Floors, Central Air, Parking Included, Pet Friendly",June 1st
+HP-1191,5202 S Blackstone Ave,Converted Loft,2,1.0,2550,991,1.47,"Pet Friendly, In-unit Laundry, Radiator Heat",August 1st
+HP-1192,5643 E 55th St,Converted Loft,2,2.0,2388,1172,0.49,"Central Air, Rooftop Deck, Doorman",Immediate
+HP-1193,5011 S University Ave,Modern High-Rise,2,2.0,2646,908,0.73,"Parking Included, In-unit Laundry",Immediate
+HP-1194,5352 E 55th St,Vintage Walk-up,2,2.0,2039,1124,1.49,"Doorman, Radiator Heat",June 1st
+HP-1195,5412 S Ridgewood Ct,Mid-Rise,3,3.0,3491,1463,0.83,"Pet Friendly, Balcony, Doorman, Rooftop Deck",August 1st
+HP-1196,5700 S Kenwood Ave,Renovated Greystone,1,1.0,1955,742,0.17,"Hardwood Floors, Radiator Heat, Central Air",July 1st
+HP-1197,4952 S Kimbark Ave,Converted Loft,2,2.0,2418,1113,0.52,"Doorman, Radiator Heat, Central Air, Fitness Center, Hardwood Floors",June 1st
+HP-1198,5222 E 54th St,Mid-Rise,1,1.0,1925,614,0.38,"Hardwood Floors, Pet Friendly, Balcony",Immediate
+HP-1199,5649 E 55th St,Student Housing,2,1.0,2741,1174,1.04,"Balcony, Hardwood Floors",Immediate
+HP-1200,5541 S Lake Shore Dr,Mid-Rise,Studio,1.0,1401,544,0.52,"Central Air, Pet Friendly, Rooftop Deck",Immediate
