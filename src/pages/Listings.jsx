@@ -11,26 +11,36 @@ const TRANSPORT_LABELS = {
   bike: 'bike-friendly',
 }
 
+function matchesCity(apt, city) {
+  if (!city) return true
+  if (city === 'New York') return apt.state === 'NY'
+  return apt.city === city
+}
+
 export default function Listings() {
   const [searchParams] = useSearchParams()
   const budget = Number(searchParams.get('budget') || 3000)
   const transport = searchParams.get('transport') || ''
   const roommatePreference = searchParams.get('roommate') || 'open'
+  const city = searchParams.get('city') || ''
 
   const filtered = useMemo(() => {
     return apartments.filter(apt => {
+      if (!matchesCity(apt, city)) return false
       if (apt.rent > budget) return false
       if (transport && !apt.transport.includes(transport)) return false
       if (roommatePreference === 'solo' && apt.bedrooms > 1) return false
       if (roommatePreference === 'need_roommates' && apt.bedrooms < 2) return false
       return true
     })
-  }, [budget, transport, roommatePreference])
+  }, [budget, transport, roommatePreference, city])
 
   const roommateLabel =
     roommatePreference === 'solo' ? 'Living alone'
     : roommatePreference === 'need_roommates' ? 'Seeking roommates'
     : 'Open to roommates'
+
+  const roommatesHref = `/roommates?budget=${budget}&transport=${transport}${city ? `&city=${city}` : ''}`
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
@@ -40,11 +50,12 @@ export default function Listings() {
           <p className="text-slate-500 text-sm mt-1">
             {filtered.length} result{filtered.length !== 1 ? 's' : ''} · up to ${budget.toLocaleString()}/mo
             {transport && ` · ${TRANSPORT_LABELS[transport] || transport}`}
+            {city && ` · ${city}`}
           </p>
         </div>
         <div className="flex gap-2 flex-wrap">
           <Link
-            to={`/roommates?budget=${budget}&transport=${transport}`}
+            to={roommatesHref}
             className="bg-amber-500 hover:bg-amber-600 text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors"
           >
             Find Roommates
@@ -63,6 +74,11 @@ export default function Listings() {
         <span className="text-xs bg-blue-50 text-blue-700 border border-blue-200 px-3 py-1 rounded-full">
           Budget: ${budget.toLocaleString()}/mo
         </span>
+        {city && (
+          <span className="text-xs bg-blue-50 text-blue-700 border border-blue-200 px-3 py-1 rounded-full">
+            City: {city}
+          </span>
+        )}
         {transport && (
           <span className="text-xs bg-blue-50 text-blue-700 border border-blue-200 px-3 py-1 rounded-full capitalize">
             Transport: {transport}
@@ -75,12 +91,11 @@ export default function Listings() {
 
       {filtered.length === 0 ? (
         <div className="text-center py-20">
-          <div className="text-5xl mb-4">🔍</div>
           <h2 className="text-xl font-semibold text-slate-700 mb-2">No apartments found</h2>
           <p className="text-slate-500 mb-4">
-            Try increasing your budget or changing your transport preference.
+            Try increasing your budget, changing your transport preference, or selecting a different city.
           </p>
-          <Link to="/" className="text-blue-600 hover:underline text-sm">← Back to search</Link>
+          <Link to="/" className="text-blue-600 hover:underline text-sm">Back to search</Link>
         </div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
