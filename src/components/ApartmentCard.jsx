@@ -1,9 +1,9 @@
-const TRANSPORT_ICONS = {
-  walking: '🚶',
-  bus: '🚌',
-  train: '🚆',
-  car: '🚗',
-  bike: '🚲',
+const TRANSPORT_LABELS = {
+  walking: 'Walk',
+  bus: 'Bus',
+  train: 'Train',
+  car: 'Car',
+  bike: 'Bike',
 }
 
 export default function ApartmentCard({ apartment }) {
@@ -63,9 +63,11 @@ export default function ApartmentCard({ apartment }) {
 
         <div className="mt-3">
           <p className="text-xs text-slate-400 mb-1">Transit nearby</p>
-          <div className="flex gap-1.5">
+          <div className="flex flex-wrap gap-1">
             {transport.map(t => (
-              <span key={t} title={t} className="text-lg">{TRANSPORT_ICONS[t]}</span>
+              <span key={t} className="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded">
+                {TRANSPORT_LABELS[t] || t}
+              </span>
             ))}
           </div>
         </div>

@@ -34,23 +34,18 @@ export default function RoommateCard({ roommate, compatibilityScore }) {
 
       <p className="text-sm text-slate-600 mt-3 line-clamp-2 flex-1">{bio}</p>
 
-      <div className="mt-3 grid grid-cols-2 gap-y-1 text-xs text-slate-600">
-        <div className="flex items-center gap-1">
-          <span>💰</span>
-          <span>Budget: ${budget}/mo</span>
-        </div>
-        <div className="flex items-center gap-1">
-          <span>🕐</span>
-          <span>{schedule}</span>
-        </div>
-        <div className="flex items-center gap-1">
-          <span>🚌</span>
-          <span>{TRANSPORT_LABELS[transport] || transport}</span>
-        </div>
-        <div className="flex items-center gap-1">
-          <span>📅</span>
-          <span>Move in: {moveInDate}</span>
-        </div>
+      <div className="mt-3 grid grid-cols-2 gap-y-2 text-xs">
+        {[
+          { label: 'Budget',    value: `$${budget}/mo` },
+          { label: 'Schedule',  value: schedule },
+          { label: 'Transport', value: TRANSPORT_LABELS[transport] || transport },
+          { label: 'Move in',   value: moveInDate },
+        ].map(({ label, value }) => (
+          <div key={label}>
+            <span className="text-slate-400">{label}: </span>
+            <span className="text-slate-700 font-medium">{value}</span>
+          </div>
+        ))}
       </div>
 
       <div className="mt-3 flex flex-wrap gap-1">
